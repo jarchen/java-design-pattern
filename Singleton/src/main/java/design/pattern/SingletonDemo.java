@@ -7,7 +7,7 @@ public class SingletonDemo {
     private SingletonDemo() {
     }
 
-    public SingletonDemo getInstance() {
+    public static SingletonDemo getInstance() {
         if (instance == null) instance = new SingletonDemo();
 
         return instance;
