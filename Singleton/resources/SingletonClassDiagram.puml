@@ -1,0 +1,10 @@
+@startuml
+scale 1.5
+
+class Singleton {
+    - {static} instance : Singleton
+    - Singleton()
+    + {static} getInstance() : Singleton
+}
+
+@enduml
