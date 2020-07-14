@@ -7,4 +7,6 @@ class Singleton {
     + {static} getInstance() : Singleton
 }
 
+Singleton <.. Singleton
+
 @enduml
