@@ -9,6 +9,7 @@
 
 ## Creational 建立型模式
 - [Singleton 單例模式](Singleton)
+- [Factory 工廠模式](Factory)
 
 ## Structural 結構型模式
 
