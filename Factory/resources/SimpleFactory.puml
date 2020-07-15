@@ -1,0 +1,21 @@
+@startuml
+skinparam linetype ortho
+
+title Simple Factory
+scale 1.5
+
+interface Product
+
+together {
+    class Client
+    class ProductFactory {
+        + {static} getProduct() : Product
+    }
+}
+
+Client -- ProductFactory
+Client - Product : use >
+
+ProductFactory - Product : "create" >
+
+@enduml

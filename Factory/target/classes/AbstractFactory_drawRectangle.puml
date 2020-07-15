@@ -1,0 +1,46 @@
+@startuml
+skinparam linetype ortho
+
+title Dare Rectangle Abstract Factory
+scale 1.5
+
+class Rectangle {
+    - width
+    - height
+    + paint(factory : PointCornerFactory)
+}
+
+together {
+    interface PointCornerFactory {
+            + getPoint() : Point
+            + getCorner() : Corner
+        }
+    class PointCornerFactoryImpl implements PointCornerFactory
+}
+
+together {
+    interface Corner {
+        + leftUp()
+        + rightUp()
+        + leftDown()
+        + rightDown()
+    }
+    class CornerImpl implements Corner
+}
+
+together {
+    interface Point {
+        + line(width : int)
+    }
+    class PointImpl implements Point
+}
+
+Rectangle ..> PointCornerFactory
+Rectangle .> Point
+Rectangle .> Corner
+
+
+PointCornerFactoryImpl - PointImpl : "create">
+PointCornerFactoryImpl - CornerImpl : "create">
+
+@enduml
