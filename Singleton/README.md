@@ -8,7 +8,7 @@
 1. 登記式
 
 ## 圖例
-![圖例](./resources/SingletonClassDiagram.png)
+![圖例](resources/ClassDiagram.png)
 
 ## 真實使用案例
 * [java.lang.Runtime#getRuntime()](http://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#getRuntime%28%29)

@@ -1,4 +1,6 @@
 @startuml
+title Singleton
+
 scale 1.5
 
 class Singleton {
