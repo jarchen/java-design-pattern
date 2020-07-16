@@ -2,7 +2,7 @@
 skinparam linetype ortho
 
 title Dare Rectangle Abstract Factory
-scale 1.5
+'scale 1.5
 
 class Rectangle {
     - width

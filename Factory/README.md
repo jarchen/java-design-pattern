@@ -8,13 +8,18 @@
 
 ## 圖例
 ### Simple Factory
-![圖例](./resources/SimpleFactory.puml)
+![圖例](./resources/SimpleFactory.png)
 
 ### Abstract Factory
-![圖例](./resources/AbstractFactory_cars.puml)
-![圖例](./resources/AbstractFactory_drawRectangle.puml)
+- Car Factory
+
+![圖例](./resources/AbstractFactory_cars.png)
+
+- Draw Rectangle
+ 
+![圖例](./resources/AbstractFactory_drawRectangle.png)
 
 ### Factory Method
-![圖例](./resources/FactoryMethod_editor.puml)
+![圖例](./resources/FactoryMethod_editor.png)
 
 ## 真實使用案例

@@ -2,7 +2,7 @@
 skinparam linetype ortho
 
 title Simple Factory
-scale 1.5
+'scale 1.5
 
 interface Product
 
