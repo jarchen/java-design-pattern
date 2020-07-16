@@ -7,6 +7,14 @@
 1. Factory Method
 
 ## 圖例
+### Simple Factory
 ![圖例](./resources/SimpleFactory.puml)
+
+### Abstract Factory
+![圖例](./resources/AbstractFactory_cars.puml)
+![圖例](./resources/AbstractFactory_drawRectangle.puml)
+
+### Factory Method
+![圖例](./resources/FactoryMethod_editor.puml)
 
 ## 真實使用案例
