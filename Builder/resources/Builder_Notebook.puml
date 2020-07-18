@@ -1,0 +1,36 @@
+@startuml
+skinparam linetype ortho
+
+title Builder
+'scale 1.5
+
+class NotebookPro {
+    -processor : Processor
+    -memory : Memory
+    -storage : Storage
+    -graphics : Graphics
+    -keyboard : Keyboard
+}
+
+class NotebookProBuilder <<abstract>> {
+    +{abstract} buildCPU(Processor) : NotebookProBuilder
+    +{abstract} buildMemory(Processor) : NotebookProBuilder
+    +{abstract} buildGraphics(Processor) : NotebookProBuilder
+    +{abstract} buildStorage(Processor) : NotebookProBuilder
+    +{abstract} buildKeyboard(Processor) : NotebookProBuilder
+    +build() : NotebookPro
+}
+
+class NotebookPro2018Builder implements NotebookProBuilder
+
+class NotebookSeller {
+    +lowSpec() : NotebookPro
+    +highSpec() : NotebookPro
+}
+
+
+NotebookSeller o-> NotebookProBuilder
+
+NotebookPro2018Builder -left.> NotebookPro : "create" >
+
+@enduml

@@ -1,0 +1,45 @@
+@startuml
+skinparam linetype ortho
+
+title Builder
+'scale 1.5
+
+interface Maze {
+    +paint()
+}
+
+class MazeImpl implements Maze {
+    +paint()
+}
+
+class MazeDirector {
+    -maze : int[][]
+    -builder : MazeBuilder
+    +MazeDirector(int[][], MazeBuilder)
+    +build() : Maze
+}
+
+together {
+    interface MazeBuilder {
+        +buildRoad(int, int)
+        +buildWall(int, int)
+        +buildTreasure(int, int)
+        +getMaze() : Maze
+    }
+
+
+    class PlainBuilder implements MazeBuilder {
+        -maze : char[][]
+        +PlainBuilder(int, int)
+        +buildRoad(int, int)
+        +buildWall(int, int)
+        +buildTreasure(int, int)
+        +getMaze() : Maze
+    }
+}
+
+MazeDirector o-> MazeBuilder
+
+PlainBuilder -left- Maze
+
+@enduml
