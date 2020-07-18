@@ -1,7 +1,7 @@
 @startuml
 skinparam linetype ortho
 
-title Abstract Factory
+title Factory Method
 'scale 1.5
 
 class Editor {
